@@ -1,0 +1,1151 @@
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-smt79[0m
+{"level":"warn","ts":1583241600.3148274,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583241600.3151453,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-sfvbr[0m
+{"level":"warn","ts":1583241601.3158243,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1583241601.3166413,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-os49808n-nyc-lib-master-z825h-nxvfq[0m
+{"level":"warn","ts":1583242252.4020708,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583242253.012054,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/os49808n/nyc-lib.git @ v1.3.75 in path /workspace/source"}
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:8123e1e283a790ef89a5fdab45422fff1253c047
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Command "credential" is deprecated, it will be removed on Jun 1 2020.  This is replaced by Tekton's mounted secrets
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm WARN deprecated text-encoding@0.6.4: no longer maintained
+npm WARN deprecated core-js@2.6.11: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated babel-preset-es2015@6.24.1: 🙌  Thanks for using Babel: we recommend using babel-preset-env now: please read https://babeljs.io/env to update!
+npm WARN deprecated nomnom@1.8.1: Package no longer supported. Contact support@npmjs.com for more info.
+npm WARN deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated left-pad@1.3.0: use String.prototype.padStart()
+
+> ghooks@2.0.4 install /workspace/source/node_modules/ghooks
+> node ./bin/module-install
+
+
+> core-js@2.6.11 postinstall /workspace/source/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall /workspace/source/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
+npm WARN lifecycle nyc-lib@1.3.74~postinstall: cannot run in wd nyc-lib@1.3.74 node chmod-scripts (wd=/workspace/source)
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: abbrev@1.1.1 (node_modules/fsevents/node_modules/abbrev):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/abbrev' -> '/workspace/source/node_modules/fsevents/node_modules/.abbrev.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: ansi-regex@2.1.1 (node_modules/fsevents/node_modules/ansi-regex):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/ansi-regex' -> '/workspace/source/node_modules/fsevents/node_modules/.ansi-regex.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: aproba@1.2.0 (node_modules/fsevents/node_modules/aproba):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/aproba' -> '/workspace/source/node_modules/fsevents/node_modules/.aproba.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: balanced-match@1.0.0 (node_modules/fsevents/node_modules/balanced-match):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/balanced-match' -> '/workspace/source/node_modules/fsevents/node_modules/.balanced-match.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: chownr@1.1.3 (node_modules/fsevents/node_modules/chownr):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/chownr' -> '/workspace/source/node_modules/fsevents/node_modules/.chownr.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: code-point-at@1.1.0 (node_modules/fsevents/node_modules/code-point-at):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/code-point-at' -> '/workspace/source/node_modules/fsevents/node_modules/.code-point-at.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: concat-map@0.0.1 (node_modules/fsevents/node_modules/concat-map):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/concat-map' -> '/workspace/source/node_modules/fsevents/node_modules/.concat-map.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: console-control-strings@1.1.0 (node_modules/fsevents/node_modules/console-control-strings):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/console-control-strings' -> '/workspace/source/node_modules/fsevents/node_modules/.console-control-strings.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: core-util-is@1.0.2 (node_modules/fsevents/node_modules/core-util-is):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/core-util-is' -> '/workspace/source/node_modules/fsevents/node_modules/.core-util-is.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: deep-extend@0.6.0 (node_modules/fsevents/node_modules/deep-extend):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/deep-extend' -> '/workspace/source/node_modules/fsevents/node_modules/.deep-extend.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: delegates@1.0.0 (node_modules/fsevents/node_modules/delegates):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/delegates' -> '/workspace/source/node_modules/fsevents/node_modules/.delegates.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: detect-libc@1.0.3 (node_modules/fsevents/node_modules/detect-libc):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/detect-libc' -> '/workspace/source/node_modules/fsevents/node_modules/.detect-libc.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fs.realpath@1.0.0 (node_modules/fsevents/node_modules/fs.realpath):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/fs.realpath' -> '/workspace/source/node_modules/fsevents/node_modules/.fs.realpath.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: has-unicode@2.0.1 (node_modules/fsevents/node_modules/has-unicode):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/has-unicode' -> '/workspace/source/node_modules/fsevents/node_modules/.has-unicode.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: inherits@2.0.4 (node_modules/fsevents/node_modules/inherits):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/inherits' -> '/workspace/source/node_modules/fsevents/node_modules/.inherits.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: ini@1.3.5 (node_modules/fsevents/node_modules/ini):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/ini' -> '/workspace/source/node_modules/fsevents/node_modules/.ini.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: isarray@1.0.0 (node_modules/fsevents/node_modules/isarray):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/isarray' -> '/workspace/source/node_modules/fsevents/node_modules/.isarray.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: minimist@0.0.8 (node_modules/fsevents/node_modules/minimist):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/minimist' -> '/workspace/source/node_modules/fsevents/node_modules/.minimist.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: ms@2.1.2 (node_modules/fsevents/node_modules/ms):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/ms' -> '/workspace/source/node_modules/fsevents/node_modules/.ms.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: npm-normalize-package-bin@1.0.1 (node_modules/fsevents/node_modules/npm-normalize-package-bin):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/npm-normalize-package-bin' -> '/workspace/source/node_modules/fsevents/node_modules/.npm-normalize-package-bin.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: number-is-nan@1.0.1 (node_modules/fsevents/node_modules/number-is-nan):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/number-is-nan' -> '/workspace/source/node_modules/fsevents/node_modules/.number-is-nan.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: object-assign@4.1.1 (node_modules/fsevents/node_modules/object-assign):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/object-assign' -> '/workspace/source/node_modules/fsevents/node_modules/.object-assign.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: os-homedir@1.0.2 (node_modules/fsevents/node_modules/os-homedir):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/os-homedir' -> '/workspace/source/node_modules/fsevents/node_modules/.os-homedir.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: os-tmpdir@1.0.2 (node_modules/fsevents/node_modules/os-tmpdir):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/os-tmpdir' -> '/workspace/source/node_modules/fsevents/node_modules/.os-tmpdir.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: path-is-absolute@1.0.1 (node_modules/fsevents/node_modules/path-is-absolute):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/path-is-absolute' -> '/workspace/source/node_modules/fsevents/node_modules/.path-is-absolute.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: process-nextick-args@2.0.1 (node_modules/fsevents/node_modules/process-nextick-args):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/process-nextick-args' -> '/workspace/source/node_modules/fsevents/node_modules/.process-nextick-args.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: minimist@1.2.0 (node_modules/fsevents/node_modules/rc/node_modules/minimist):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/rc/node_modules/minimist' -> '/workspace/source/node_modules/fsevents/node_modules/rc/node_modules/.minimist.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: safe-buffer@5.1.2 (node_modules/fsevents/node_modules/safe-buffer):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/safe-buffer' -> '/workspace/source/node_modules/fsevents/node_modules/.safe-buffer.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: safer-buffer@2.1.2 (node_modules/fsevents/node_modules/safer-buffer):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/safer-buffer' -> '/workspace/source/node_modules/fsevents/node_modules/.safer-buffer.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: sax@1.2.4 (node_modules/fsevents/node_modules/sax):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/sax' -> '/workspace/source/node_modules/fsevents/node_modules/.sax.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: semver@5.7.1 (node_modules/fsevents/node_modules/semver):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/semver' -> '/workspace/source/node_modules/fsevents/node_modules/.semver.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: set-blocking@2.0.0 (node_modules/fsevents/node_modules/set-blocking):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/set-blocking' -> '/workspace/source/node_modules/fsevents/node_modules/.set-blocking.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: signal-exit@3.0.2 (node_modules/fsevents/node_modules/signal-exit):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/signal-exit' -> '/workspace/source/node_modules/fsevents/node_modules/.signal-exit.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: strip-json-comments@2.0.1 (node_modules/fsevents/node_modules/strip-json-comments):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/strip-json-comments' -> '/workspace/source/node_modules/fsevents/node_modules/.strip-json-comments.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: util-deprecate@1.0.2 (node_modules/fsevents/node_modules/util-deprecate):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/util-deprecate' -> '/workspace/source/node_modules/fsevents/node_modules/.util-deprecate.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: wrappy@1.0.2 (node_modules/fsevents/node_modules/wrappy):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/wrappy' -> '/workspace/source/node_modules/fsevents/node_modules/.wrappy.DELETE'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: yallist@3.1.1 (node_modules/fsevents/node_modules/yallist):
+npm WARN enoent SKIPPING OPTIONAL DEPENDENCY: ENOENT: no such file or directory, rename '/workspace/source/node_modules/fsevents/node_modules/yallist' -> '/workspace/source/node_modules/fsevents/node_modules/.yallist.DELETE'
+
+added 1428 packages from 767 contributors and audited 912284 packages in 52.561s
+found 11 vulnerabilities (4 low, 2 moderate, 5 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> nyc-lib@1.3.74 pretest /workspace/source
+> rm -rf ./dist
+
+
+> nyc-lib@1.3.74 test /workspace/source
+> jest
+
+PASS __tests__/nyc/Geoclient.test.js
+  ✓ constructor no projection (4ms)
+  ✓ constructor has projection (1ms)
+  ✓ search for nothing (1ms)
+  ✓ search for good ZIP (4ms)
+  ✓ search for bad ZIP (1ms)
+  ✓ project (1ms)
+  ✓ geoclient GEOCLIENT_OK_ADDRESS_RESPONSE (7ms)
+  ✓ geoclient GEOCLIENT_OK_PLACE_RESPONSE (47ms)
+  ✓ geoclient GEOCLIENT_AMBIGUOUS_RESPONSE (56ms)
+  ✓ geoclient GEOCLIENT_OK_BLOCKFACE_RESPONSE (2ms)
+  ✓ geoclient GEOCLIENT_OK_INTERSECTION_RESPONSE (2ms)
+  ✓ geoclient GEOCLIENT_REJECTED_RESPONSE (2ms)
+  ✓ geoclient GEOCLIENT_NON_ADDRESSABLE_RESPONSE (61ms)
+
+  console.warn src/nyc/Geoclient.js:188
+    No coordinate { level: '1',
+      status: 'POSSIBLE_MATCH',
+      request:
+       'address [houseNumber=2, street=METRO NORTH  125 STREET, borough=MANHATTAN, zip=null]',
+      response:
+       { bbl: '1270010091',
+         bblBoroughCode: '1',
+         bblTaxBlock: '27001',
+         bblTaxLot: '0091',
+         boroughCode1In: '1',
+         buildingIdentificationNumber: '1798091',
+         crossStreetNamesFlagIn: 'E',
+         firstBoroughName: 'MANHATTAN',
+         firstStreetCode: '10089601020',
+         geosupportFunctionCode: '1B',
+         geosupportReturnCode: '58',
+         geosupportReturnCode2: '01',
+         gi5DigitStreetCode1: '00896',
+         gi5DigitStreetCode2: '14590',
+         gi5DigitStreetCode3: '14590',
+         gi5DigitStreetCode4: '14590',
+         giBoroughCode1: '1',
+         giBoroughCode2: '1',
+         giBoroughCode3: '1',
+         giBoroughCode4: '1',
+         giBuildingIdentificationNumber1: '1798091',
+         giBuildingIdentificationNumber2: '1090030',
+         giBuildingIdentificationNumber3: '1090031',
+         giBuildingIdentificationNumber4: '1090032',
+         giDcpPreferredLgc1: '01',
+         giDcpPreferredLgc2: '01',
+         giDcpPreferredLgc3: '01',
+         giDcpPreferredLgc4: '01',
+         giGeographicIdentifier1: 'U',
+         giGeographicIdentifier2: 'B',
+         giGeographicIdentifier3: 'B',
+         giGeographicIdentifier4: 'B',
+         giStreetCode1: '10089601',
+         giStreetCode2: '11459001',
+         giStreetCode3: '11459001',
+         giStreetCode4: '11459001',
+         giStreetName1: 'METRO NORTH-HARLEM-125 STREET',
+         giStreetName2: 'CENTRE STREET',
+         giStreetName3: 'CENTRE STREET',
+         giStreetName4: 'CENTRE STREET',
+         highBblOfThisBuildingsCondominiumUnits: '1270010091',
+         houseNumberIn: '2',
+         lowBblOfThisBuildingsCondominiumUnits: '1270010091',
+         lowHouseNumberOfDefiningAddressRange: '000001000AA',
+         message:
+          'NON-ADDRESSABLE PLACE NAME, BRIDGE, TUNNEL OR MISC STRUCTURE NOT FOUND',
+         message2:
+          'INPUT IS NON-ADDRESSABLE PLACE NAME (NAP) - ADDRESS NUMBER IGNORED',
+         numberOfEntriesInListOfGeographicIdentifiers: '0004',
+         numberOfExistingStructuresOnLot: '0004',
+         numberOfStreetFrontagesOfLot: '02',
+         reasonCode1a: 'I',
+         reasonCode2: 'I',
+         returnCode1a: '01',
+         returnCode1e: '58',
+         sanbornBoroughCode: '1',
+         streetName1In: 'METRO NORTH  125 STREET',
+         taxMapNumberSectionAndVolume: '1',
+         workAreaFormatIndicatorIn: 'C' } }
+
+  console.warn src/nyc/Geoclient.js:188
+    No coordinate { level: '0',
+      status: 'EXACT_MATCH',
+      request:
+       'place [name=METRO NORTH 125 STREET, borough=MANHATTAN, zip=null]',
+      response:
+       { bbl: '1270010091',
+         bblBoroughCode: '1',
+         bblTaxBlock: '27001',
+         bblTaxLot: '0091',
+         boroughCode1In: '1',
+         buildingIdentificationNumber: '1798091',
+         crossStreetNamesFlagIn: 'E',
+         firstBoroughName: 'MANHATTAN',
+         firstStreetCode: '10089601020',
+         firstStreetNameNormalized: 'METRO NORTH  125 STREET',
+         geosupportFunctionCode: '1B',
+         geosupportReturnCode: '58',
+         geosupportReturnCode2: '00',
+         gi5DigitStreetCode1: '00896',
+         gi5DigitStreetCode2: '14590',
+         gi5DigitStreetCode3: '14590',
+         gi5DigitStreetCode4: '14590',
+         giBoroughCode1: '1',
+         giBoroughCode2: '1',
+         giBoroughCode3: '1',
+         giBoroughCode4: '1',
+         giBuildingIdentificationNumber1: '1798091',
+         giBuildingIdentificationNumber2: '1090030',
+         giBuildingIdentificationNumber3: '1090031',
+         giBuildingIdentificationNumber4: '1090032',
+         giDcpPreferredLgc1: '01',
+         giDcpPreferredLgc2: '01',
+         giDcpPreferredLgc3: '01',
+         giDcpPreferredLgc4: '01',
+         giGeographicIdentifier1: 'U',
+         giGeographicIdentifier2: 'B',
+         giGeographicIdentifier3: 'B',
+         giGeographicIdentifier4: 'B',
+         giStreetCode1: '10089601',
+         giStreetCode2: '11459001',
+         giStreetCode3: '11459001',
+         giStreetCode4: '11459001',
+         giStreetName1: 'METRO NORTH-HARLEM-125 STREET',
+         giStreetName2: 'CENTRE STREET',
+         giStreetName3: 'CENTRE STREET',
+         giStreetName4: 'CENTRE STREET',
+         highBblOfThisBuildingsCondominiumUnits: '1270010091',
+         lowBblOfThisBuildingsCondominiumUnits: '1270010091',
+         lowHouseNumberOfDefiningAddressRange: '000001000AA',
+         message:
+          'NON-ADDRESSABLE PLACE NAME, BRIDGE, TUNNEL OR MISC STRUCTURE NOT FOUND',
+         numberOfEntriesInListOfGeographicIdentifiers: '0004',
+         numberOfExistingStructuresOnLot: '0004',
+         numberOfStreetFrontagesOfLot: '02',
+         returnCode1a: '00',
+         returnCode1e: '58',
+         sanbornBoroughCode: '1',
+         streetName1In: 'METRO NORTH 125 STREET',
+         taxMapNumberSectionAndVolume: '1',
+         workAreaFormatIndicatorIn: 'C' } }
+
+PASS __tests__/nyc/Directions.test.js
+  ✓ init (71ms)
+  ✓ zoom (63ms)
+  ✓ mode (16ms)
+  ✓ key (12ms)
+  ✓ tripPlanHack (16ms)
+  constructor
+    ✓ constructor no args (109ms)
+    ✓ constructor with args (96ms)
+  back to finder
+    ✓ back to finder (99ms)
+  createMarker
+    ✓ createMarker no marker (25ms)
+    ✓ createMarker existing marker (94ms)
+  openInfoWin
+    ✓ openInfoWin (63ms)
+  getLatLng
+    ✓ getLatLng (19ms)
+    ✓ getLatLng coord undefined (15ms)
+    ✓ getLatLng no coord provided (15ms)
+  directions
+    ✓ directions no map (79ms)
+    ✓ directions has map (25ms)
+    ✓ directions from in input no mode (65ms)
+    ✓ directions no from (31ms)
+  monitor
+    ✓ monitor has MutationObserver (61ms)
+    ✓ monitor no MutationObserver (22ms)
+  routeAlt
+    ✓ routeAlt (21ms)
+  handleResp
+    ✓ handleResp OK no origin coordinate (61ms)
+    ✓ handleResp OK has origin coordinate (15ms)
+    ✓ handleResp SOL (14ms)
+
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:62) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 5)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 6)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 7)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 8)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 9)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 10)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 11)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 12)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 13)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 14)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 15)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 16)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 17)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 18)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 19)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 20)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 21)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 22)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 23)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 24)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: this.locationMgr.search.setFeatures is not a function
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 25)
+PASS __tests__/nyc/ol/MapMgr.test.js (12.843s)
+  ✓ createLayer (2ms)
+  ✓ zoomTo (7ms)
+  ✓ expandDetail (8ms)
+  ✓ checkMouseWheel - true (11ms)
+  ✓ checkMouseWheel - false (6ms)
+  ✓ tipFunction (2ms)
+  constructor
+    ✓ constructor minimum options (38ms)
+    ✓ constructor all options (29ms)
+    ✓ constructor no source/layer provided (2ms)
+  MapMgr abstract functions
+    ✓ createParentFormat (2ms)
+    ✓ createDecorations (1ms)
+  located
+    ✓ located (18ms)
+  resetList
+    ✓ resetList - pager supplied, no coordinates supplied (8ms)
+    ✓ resetList - pager and coordinate supplied (18ms)
+    ✓ resetList - no pager supplied (8ms)
+  ready
+    ✓ ready - fit view (42ms)
+    ✓ ready - facility search is false (5ms)
+    ✓ ready - facility search is true, but source not provided (6ms)
+    ✓ ready - facility search is true (13ms)
+    ✓ ready - facility search is object (7ms)
+  directionsTo
+    ✓ directionsTo - from addr provided (6ms)
+    ✓ directionsTo - no from addr provided (13ms)
+  getFromAddr
+    ✓ getFromAddr location.type supplied - geolocated  (7ms)
+    ✓ getFromAddr no location.type supplied, name supplied  (36ms)
+    ✓ getFromAddr no location.type or name supplied  (10ms)
+  loadMarkerImage
+    ✓ loadMarkerImage (12ms)
+  createLocationMgr
+    ✓ createLocationMgr with specified search (19ms)
+    ✓ createLocationMgr with locationMarkerUrl supplied (9ms)
+    ✓ createLocationMgr with built-in search (9ms)
+    ✓ createLocationMgr with no search (28ms)
+  createPager
+    ✓ createPager w/listTarget supplied (2ms)
+    ✓ createPager w/o listTarget supplied (2ms)
+  createSource
+    ✓ createSource has source URL (8ms)
+    ✓ createSource no source URL (3ms)
+  createHighlightLayer
+    ✓ createHighlightLayer (8ms)
+  createHighlightStyle
+    ✓ createHighlightStyle w/param (6ms)
+    ✓ createHighlightStyle w/o param (8ms)
+  highlight
+    ✓ highlight (20ms)
+    ✓ highlight w/ feature (55ms)
+  createStyle
+    ✓ createStyle facilityStyle supplied as function (11ms)
+    ✓ createStyle facilityMarkerUrl supplied (15ms)
+    ✓ facilityStyle supplied as string (105ms)
+    ✓ createStyle no facilityStyle supplied (57ms)
+    ✓ createStyle no facilityStyle or facilityStyle supplied, facilityStyle supplied (6ms)
+  decorations
+    ✓ getTip (3ms)
+    ✓ getName (2ms)
+    ✓ cssClass (2ms)
+    ✓ getAddress1 (2ms)
+    ✓ getAddress2 (2ms)
+    ✓ getCityStateZip (2ms)
+    ✓ getFullAddress (6ms)
+    ✓ getPhone (1ms)
+    ✓ getEmail (2ms)
+    ✓ getWebsite (2ms)
+    ✓ detailsHtml (1ms)
+    ✓ nameHtml (4ms)
+    ✓ addressHtml with line 2 (4ms)
+    ✓ addressHtml no line 2 (3ms)
+    ✓ mapButton (4ms)
+    ✓ directionsButton (2ms)
+    ✓ phoneButton has phone (3ms)
+    ✓ phoneButton no phone (1ms)
+    ✓ emailButton has email (2ms)
+    ✓ emailButton no email (1ms)
+    ✓ websiteButton has website (22ms)
+    ✓ websiteButton no website (2ms)
+    ✓ distanceHtml has distance in feet (3ms)
+    ✓ distanceHtml has distance in meters (2ms)
+    ✓ screen reader distanceHtml has distance in feet (3ms)
+    ✓ screen reader distanceHtml has distance in meters (2ms)
+    ✓ distanceHtml no distance (1ms)
+    ✓ detailsCollapsible has details (11ms)
+    ✓ detailsCollapsible no dtl (3ms)
+    ✓ html (13ms)
+    ✓ handleButton (3ms)
+
+PASS __tests__/nyc/index.test.js
+  ✓ inherits (5ms)
+  ✓ subclass (2ms)
+  ✓ mixin (5ms)
+  ✓ copyFromParentProperties (1ms)
+  ✓ copyFromParentKeys (1ms)
+  ✓ capitalize
+  ✓ nextId (1ms)
+  ✓ html has htm method (2ms)
+  ✓ html has getProperties method (12ms)
+  ✓ html has properties field (38ms)
+  ✓ html plain object (10ms)
+  ✓ loading/loaded (28ms)
+  ✓ cacheBust (1ms)
+  ✓ removeDups (2ms)
+  ✓ location
+  activeElement
+    ✓ activeElement is not text input (6ms)
+    ✓ activeElement is text input (2ms)
+  noSpaceBarScroll
+    ✓ noSpaceBarScroll div (4ms)
+    ✓ noSpaceBarScroll select (2ms)
+    ✓ noSpaceBarScroll a href # (2ms)
+    ✓ noSpaceBarScroll a no href (2ms)
+    ✓ noSpaceBarScroll a has href (2ms)
+    ✓ noSpaceBarScroll a has href and target (2ms)
+    ✓ noSpaceBarScroll input (2ms)
+    ✓ noSpaceBarScroll textarea (1ms)
+
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:69) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 5)
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 6)
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 7)
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 8)
+(node:69) UnhandledPromiseRejectionWarning: TypeError: item.html is not a function
+(node:69) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 9)
+PASS __tests__/nyc/ol/FinderApp.test.js (14.85s)
+  ✓ constructor mouseWheelZoom is undefined (173ms)
+  ✓ constructor mouseWheelZoom = false (65ms)
+  ✓ directionsTo (58ms)
+  ✓ createFilters (250ms)
+  ✓ showSplash (538ms)
+  ✓ expandDetail (31ms)
+  ✓ createParentFormat (23ms)
+  ✓ filter apply button focuses facilities (24ms)
+  reload button
+    ✓ reload button (71ms)
+  zoomTo
+    ✓ zoomTo map tab button hidden (69ms)
+    ✓ zoomTo map tab button visible (94ms)
+  adjustTabs
+    ✓ adjustTabs full width (32ms)
+    ✓ adjustTabs not full width (43ms)
+    ✓ adjustTabs activeElement isTextInput (28ms)
+    ✓ adjustTabs directions visible (34ms)
+  tabChange
+    ✓ tabChange tabs do not fill screen (23ms)
+    ✓ tabChange tabs do fill screen (27ms)
+  located
+    ✓ located (28ms)
+  resetList
+    ✓ resetList is filter event has coordinate (21ms)
+    ✓ resetList no filter event no coordinate (26ms)
+  ready
+    ✓ ready facilitySearch false (26ms)
+    ✓ ready facilitySearch true (22ms)
+    ✓ ready has facilitySearch options (24ms)
+  createDecorations
+    ✓ createDecorations none provided (32ms)
+    ✓ createDecorations provided with parentFormat (29ms)
+    ✓ createDecorations provided with parentFormat and format (24ms)
+    ✓ createDecorations provided with parentFormat and format and option (19ms)
+  mobile tests
+    ✓ mobileDiaOpts - user location (26ms)
+    ✓ mobileDiaOpts - finder location == location (22ms)
+    ✓ mobileDiaOpts - user searches for location (18ms)
+
+PASS __tests__/nyc/Search.test.js (8.303s)
+  ✓ constructor target is input (12ms)
+  ✓ constructor target is map (7ms)
+  ✓ abstract method featureAsLocation (3ms)
+  ✓ key keyCode is 13 and isAddrSrch is true (540ms)
+  ✓ key keyCode not 13 and isAddrSrch is true (508ms)
+  ✓ key keyCode not 13 and isAddrSrch is false (505ms)
+  ✓ key keyCode is 13 and isAddrSrch is false (508ms)
+  ✓ clearTxt (4ms)
+  ✓ clearBtn (7ms)
+  ✓ filterList no autoComplete (3ms)
+  ✓ filterList no input (3ms)
+  ✓ filterList has autoComplete and input (5ms)
+  ✓ showList with focus (1063ms)
+  ✓ showList without focus (1025ms)
+  ✓ triggerSearch has value (4ms)
+  ✓ triggerSearch no value (3ms)
+  ✓ val (4ms)
+  ✓ disambiguate no possible (2ms)
+  ✓ disambiguate has possible (53ms)
+  ✓ setFeatures/sortAlphapetically no nameField no displayField has placeholder (9ms)
+  ✓ setFeatures/sortAlphapetically has nameField has displayField no placeholder (6ms)
+  ✓ removeFeatures (7ms)
+  ✓ listItem addr no displayField (6ms)
+  ✓ listItem not addr has displayField (4ms)
+  ✓ emptyList (12ms)
+  ✓ disambiguated is LI (561ms)
+  ✓ listClick list closed (3ms)
+  ✓ listClick list open but not clicked (512ms)
+  ✓ listClick list open is clicked but no autoComplete (507ms)
+  ✓ listClick list open is clicked and has autoComplete (509ms)
+  hookupEvents called from constructor
+    ✓ hookupEvents (133ms)
+
+PASS __tests__/nyc/Dialog.test.js
+  ✓ constructor (9ms)
+  ✓ ok check buttons (548ms)
+  ✓ ok esc key does not resolve promise (7ms)
+  ✓ ok click (4ms)
+  ✓ input check buttons (511ms)
+  ✓ input esc key resolves promise (5ms)
+  ✓ input return key resolves promise (4ms)
+  ✓ input click submit (4ms)
+  ✓ input click cancel (5ms)
+  ✓ yesNo check buttons (512ms)
+  ✓ yesNo esc key does not resolve promise (3ms)
+  ✓ yesNo click yes (4ms)
+  ✓ yesNo click no (12ms)
+  ✓ yesNoCancel check buttons (515ms)
+  ✓ yesNoCancel esc key resolves promise (7ms)
+  ✓ yesNoCancel click yes (7ms)
+  ✓ yesNoCancel click no (3ms)
+  ✓ yesNoCancel click cancel (25ms)
+  ✓ buttons Dialog.Type.OK (5ms)
+  ✓ buttons Dialog.Type.INPUT (6ms)
+  ✓ buttons Dialog.Type.YES_NO (7ms)
+  ✓ buttons Dialog.Type.YES_NO_CANCEL (10ms)
+  ✓ hide (5ms)
+  ✓ checkHref (3ms)
+
+PASS __tests__/nyc/soda/Query.test.js
+  ✓ addFilter (1ms)
+  ✓ clearFilters (1ms)
+  ✓ clearAllFilters (1ms)
+  ✓ appendFilter (39ms)
+  ✓ getUrlAndQuery (1ms)
+  ✓ qstr (5ms)
+  ✓ execute csv (4ms)
+  ✓ execute promise failed (1ms)
+  ✓ execute json (1ms)
+  ✓ csv
+  ✓ Query and
+  constructor
+    ✓ constructor (4ms)
+  setters
+    ✓ setQuery (11ms)
+    ✓ setAppToken (1ms)
+    ✓ setUrl
+    ✓ setFilter (1ms)
+    ✓ setFilters
+
+  console.warn __tests__/nyc/soda/Query.test.js:322
+    {}
+
+  console.error src/nyc/LocalStorage.js:234
+    mock-error
+
+PASS __tests__/nyc/LocationMgr.test.js
+  ✓ setLocation (42ms)
+  ✓ locateFromQueryString (15ms)
+  ✓ located GEOCODE (17ms)
+  ✓ located GEOLOCATION (12ms)
+  ✓ ambiguous no possible (34ms)
+  ✓ ambiguous has possible (11ms)
+  ✓ error (8ms)
+  constructor tests
+    ✓ constructor not autoLocate (18ms)
+    ✓ constructor autoLocate (10ms)
+  hookupEvents
+    ✓ hookupEvents (10ms)
+
+PASS __tests__/nyc/LocalStorage.test.js
+  ✓ canDownload (2ms)
+  ✓ saveGeoJson (5ms)
+  ✓ setItem/getItem/removeItem (2ms)
+  ✓ readPrj (1ms)
+  ✓ addToMap
+  readTextFile
+    ✓ readTextFile file provided (1ms)
+    ✓ readTextFile no file provided (3ms)
+  loadGeoJsonFile
+    ✓ loadGeoJsonFile has callback (41ms)
+    ✓ loadGeoJsonFile no callback (2ms)
+    ✓ loadGeoJsonFile no callback
+  loadShapeFile
+    ✓ loadShapeFile no files (2ms)
+    ✓ loadShapeFile has files
+  getShpDbfPrj
+    ✓ getShpDbfPrj has shp (2ms)
+    ✓ getShpDbfPrj no shp no callback (1ms)
+    ✓ getShpDbfPrj no shp has callback
+  readShpDbf
+    ✓ readShpDbf has dbf (2ms)
+    ✓ readShpDbf no dbf (1ms)
+    ✓ readShpDbf no shp (1ms)
+  readShp
+    ✓ readShp success with callback (505ms)
+    ✓ readShp success no callback (502ms)
+    ✓ readShp fail (511ms)
+  customProj
+    ✓ customProj (2ms)
+
+PASS __tests__/nyc/ol/source/FilterAndSort.test.js
+  ✓ constructor (3ms)
+  ✓ sort is metric (9ms)
+  ✓ filter (3ms)
+  ✓ filter (2ms)
+  ✓ sort with distance in data projection (8ms)
+  ✓ sort with distance in data projection from parentFormat (4ms)
+  ✓ storeFeatures (1ms)
+  ✓ distance - is metric (1ms)
+  ✓ distance - not metric (2ms)
+
+PASS __tests__/nyc/ol/Locator.test.js
+  ✓ locate (1ms)
+  ✓ track
+  ✓ geolocationError (1ms)
+  ✓ geolocationChange not currently locating, no limit (10ms)
+  ✓ geolocationChange not currently locating, within limit (1ms)
+  ✓ geolocationChange not currently locating, not within limit
+  ✓ geolocationChange is currently locating, not within limit (1ms)
+  ✓ geolocationChange IS currently locating, within limit (2ms)
+  constructor tests
+    ✓ constructor no extent limit and default projection (4ms)
+    ✓ constructor no extent limit and projection provided (2ms)
+    ✓ constructor has extent limit and default projection (2ms)
+
+PASS __tests__/nyc/ol/Basemap.test.js (6.926s)
+  ✓ showPhoto no year (41ms)
+  ✓ showPhoto 1996 (17ms)
+  ✓ hidePhoto (12ms)
+  ✓ showLabels (11ms)
+  ✓ getBaseLayers (13ms)
+  ✓ getStorage (14ms)
+  ✓ defaultExtent view not provided (6ms)
+  ✓ defaultExtent view is provided (25ms)
+  ✓ setupLayers as called by constructor (15ms)
+  ✓ layerExtent (7ms)
+  ✓ photoChange triggered by visible change (21ms)
+  ✓ setupView no view in options (2ms)
+  ✓ setupView has view in options
+  constructor tests
+    ✓ constructor no view in options, has interations in options (33ms)
+    ✓ constructor has view in options, no interations in options (9ms)
+
+PASS __tests__/nyc/Tabs.test.js
+  ✓ contructor default active (34ms)
+  ✓ contructor provide active (14ms)
+  ✓ open (21ms)
+  ✓ btnClick (6ms)
+
+(node:62) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 27)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 28)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 29)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 30)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 31)
+(node:62) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+(node:62) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 32)
+PASS __tests__/nyc/ol/FrameworkMap.test.js
+  ✓ createParentFormat (30ms)
+  ✓ createDecorations (47ms)
+  ✓ FEATURE_DECORATIONS minimal (3ms)
+  ✓ FEATURE_DECORATIONS full (3ms)
+  constructor
+    ✓ constructor with hidden search input (135ms)
+    ✓ constructor with built-in search input (190ms)
+    ✓ constructor with external search input (73ms)
+    ✓ constructor no facility search (30ms)
+
+PASS __tests__/nyc/ol/FeatureTip.test.js
+  ✓ constructor (31ms)
+  ✓ hide (28ms)
+  ✓ label with css (9ms)
+  ✓ label no css (21ms)
+  ✓ label no label (7ms)
+  ✓ position bottom-right (10ms)
+  ✓ position bottom-right (54ms)
+  ✓ position bottom-right (6ms)
+  ✓ position bottom-right (13ms)
+  out
+    ✓ out triggered by document mouseover (9ms)
+
+PASS __tests__/nyc/lang/Goog.test.js
+  ✓ constructor is button (102ms)
+  ✓ constructor not button (21ms)
+  ✓ getCookie (22ms)
+  ✓ showOriginalText (28ms)
+  translate
+    ✓ translate (62ms)
+  hack
+    ✓ hack not translated (21ms)
+    ✓ hack is translated (53ms)
+  translate needs to wait for google to load
+    ✓ translate needs to wait for google to load (544ms)
+
+PASS __tests__/nyc/ol/Popup.test.js
+  ✓ show with html (19ms)
+  ✓ show without html (16ms)
+  ✓ hide (9ms)
+  ✓ hideTip (10ms)
+  constructor and events
+    ✓ constructor and events no margin or autoPanAnimation (18ms)
+    ✓ constructor and events has margin and autoPanAnimation (10ms)
+  pan
+    ✓ pan not isFullscreen and display is none (7ms)
+    ✓ pan not isFullscreen and display is not none (6ms)
+    ✓ pan not isFullscreen and display is none (5ms)
+    ✓ pan is isFullscreen and display is none (5ms)
+  isFullscreen
+    ✓ is isFullscreen (17ms)
+    ✓ not isFullscreen (5ms)
+
+PASS __tests__/nyc/EventHandling.test.js
+  ✓ constructor (1ms)
+  ✓ on (3ms)
+  ✓ one (3ms)
+  ✓ trigger a single stand alone function for a single event
+  ✓ trigger stand alone function from many for a single event (1ms)
+  ✓ trigger multiple stand alone function for a single event (1ms)
+  ✓ trigger function within scope (1ms)
+  ✓ trigger non-event
+  ✓ off single handler (1ms)
+  ✓ off multiple handlers remove from middle (1ms)
+  ✓ off multiple handlers remove from beginnig
+  ✓ off multiple handlers remove from end (1ms)
+
+PASS __tests__/nyc/ol/format/CsvPoint.test.js
+  ✓ readFeatures has id and projections (5ms)
+  ✓ readFeatures from ArrayBuffer no id or default projections (4ms)
+  ✓ readFeatures no id or default projections (1ms)
+  ✓ getType
+  hookupEvents called from constructor
+    ✓ readFeatures has bad data
+    ✓ readProjection (1ms)
+  detectCsvFormat
+    ✓ detectCsvFormat autoDetect = true with X, Y
+    ✓ detectCsvFormat autoDetect = true with LNG, LAT (1ms)
+
+PASS __tests__/nyc/AutoComplete.test.js
+  ✓ filter one lower case letter (11ms)
+  ✓ filter one upper case letter (6ms)
+  ✓ filter three letters (7ms)
+  ✓ filter four letters not exact (5ms)
+  ✓ filter four letters exact with mutiple matches (4ms)
+  ✓ filter four letters exact with one match (4ms)
+  ✓ filter seven letters not exact (3ms)
+  ✓ filter multiple times with swap (5ms)
+
+PASS __tests__/nyc/ol/format/Decorate.test.js
+  ✓ readFeatures extendFeature (10ms)
+  ✓ readFeatures no extendFeature (5ms)
+  ✓ readFeature (1ms)
+  ✓ decorate (2ms)
+  ✓ getType
+  ✓ readProjection
+
+PASS __tests__/nyc/Choice.test.js
+  ✓ constructor checkbox (15ms)
+  ✓ constructor radio (19ms)
+  ✓ val checkbox (5ms)
+  ✓ val radio (3ms)
+  ✓ change checkbox (4ms)
+
+PASS __tests__/nyc/Slider.test.js
+  ✓ val (3ms)
+  ✓ badKey (4ms)
+  ✓ key (4ms)
+  constructor
+    ✓ constructor all options (22ms)
+    ✓ constructor ony required options (25ms)
+
+PASS __tests__/nyc/ol/source/SocrataJson.test.js
+  ✓ constructor url is string (2ms)
+  ✓ constructor url is function (1ms)
+  urlFunction
+    ✓ urlFunction min options (2ms)
+    ✓ urlFunction all options (1ms)
+
+PASS __tests__/nyc/ol/MultiFeaturePopup.test.js
+  ✓ constructor (58ms)
+  ✓ showFeatures no coordinate (15ms)
+  ✓ showFeatures has coordinate (15ms)
+  ✓ paged (11ms)
+  ✓ mapClick has features (10ms)
+  ✓ mapClick no features (11ms)
+  ✓ showFeature (21ms)
+
+PASS __tests__/nyc/ol/MapLocator.test.js
+  ✓ constructor default zoom and style (16ms)
+  ✓ constructor provided zoom and style (6ms)
+  ✓ FeatureTip created (4ms)
+  ✓ setLocation (19ms)
+  ✓ zoomLocation point geom (5ms)
+  ✓ zoomLocation not point geom (11ms)
+  ✓ getProjection (5ms)
+
+PASS __tests__/nyc/BasemapHelper.test.js
+  ✓ hookupEvents (4ms)
+  ✓ loadLayer event has dataTransfer (3ms)
+  ✓ loadLayer event has no dataTransfer (1ms)
+  ✓ loadLayer dataTransfer has no files (1ms)
+  ✓ sortedPhotos (3ms)
+
+PASS __tests__/nyc/ItemPager.test.js
+  ✓ constructor no target and no items (12ms)
+  ✓ constructor no items (8ms)
+  ✓ constructor has zero calls show (30ms)
+  ✓ constructor has items calls show (6ms)
+  ✓ show triggers change (2ms)
+  ✓ navigate (29ms)
+
+PASS __tests__/nyc/Collapsibe.test.js
+  ✓ constructor expanded (27ms)
+  ✓ constructor collapsed (6ms)
+  ✓ toggle via button click (10ms)
+
+PASS __tests__/nyc/ol/Filters.test.js
+  ✓ constructor (33ms)
+  ✓ filter has checked options (27ms)
+  ✓ filter no checked options (18ms)
+
+PASS __tests__/nyc/ol/FeaturePopup.test.js
+  ✓ showFeature has coordinate (11ms)
+  ✓ showFeature no coordinate (11ms)
+  ✓ mapClick (5ms)
+  constructor
+    ✓ constructor (16ms)
+
+PASS __tests__/nyc/Content.test.js
+  ✓ constructor (3ms)
+  ✓ message (2ms)
+  ✓ loadCsv returns Promise (2ms)
+  ✓ loadCsv with provided messages (2ms)
+  ✓ loadCsv with no messages (2ms)
+  ✓ applyToDom (2ms)
+
+PASS __tests__/nyc/Share.test.js
+  ✓ constructor (507ms)
+  ✓ show/hide (518ms)
+
+PASS __tests__/nyc/ol/format/CartoSql.test.js
+  ✓ readFeatures with cartodb_id (5ms)
+  ✓ readFeatures without cartodb_id (2ms)
+  ✓ createSql (1ms)
+  ✓ readProjection
+  ✓ getType (1ms)
+
+PASS __tests__/nyc/Locator.test.js
+  ✓ hookupEvents/proxyEvent (1ms)
+  ✓ not implemented methods (1ms)
+  ✓ search (1ms)
+  ✓ accuracyDistance (1ms)
+  constructor tests
+    ✓ constructor no projection (2ms)
+    ✓ constructor has projection (1ms)
+
+PASS __tests__/nyc/ol/format/SocrataJson.test.js
+  ✓ readFeaturesFromObject has id and geometry names (3ms)
+  ✓ readFeaturesFromObject no id or geometry names (2ms)
+  ✓ readProjection (1ms)
+
+PASS __tests__/nyc/ListPager.test.js
+  ✓ constructor without items and pageSize (42ms)
+  ✓ everything constructed with items and pageSize (25ms)
+
+PASS __tests__/nyc/mta/TripPlanHack.test.js
+  ✓ directions (3ms)
+  ✓ accessible directions (5ms)
+  ✓ randomParamCopiedFromMtaCode (1ms)
+  now
+    ✓ am (2ms)
+    ✓ pm (5ms)
+
+PASS __tests__/nyc/ol/LocalStorage.test.js
+  ✓ addToMap objects (5ms)
+  ✓ addToMap string (3ms)
+
+PASS __tests__/nyc/ol/Search.test.js
+  ✓ constructor (24ms)
+  ✓ featureAsLocation (5ms)
+  ✓ featureAsLocation feature has getName (4ms)
+
+PASS __tests__/nyc/ol/LocationMgr.test.js
+  ✓ constructor no search target (60ms)
+  ✓ constructor with search target (21ms)
+
+PASS __tests__/nyc/ol/Zoom.test.js
+  ✓ constructor (24ms)
+  ✓ zoom (4ms)
+
+PASS __tests__/nyc/ol/source/AutoLoad.test.js
+  ✓ constructor (3ms)
+  ✓ resolve (3ms)
+
+PASS __tests__/nyc/Zoom.test.js
+  ✓ constructor (3ms)
+  ✓ abstract method zoom (3ms)
+  click events
+    ✓ click events (4ms)
+
+PASS __tests__/nyc/ol/Geolocate.test.js
+  ✓ constructor (5ms)
+  ✓ container click dblclick mouseover mousemove (22ms)
+
+PASS __tests__/nyc/Container.test.js
+  ✓ everything (4ms)
+
+PASS __tests__/nyc/Geolocate.test.js
+  ✓ constructor (11ms)
+  ✓ geolocated (2ms)
+
+PASS __tests__/nyc/ReplaceTokens.test.js
+  ✓ replace (1ms)
+
+PASS __tests__/nyc/ol/source/AutoLoad.super.test.js
+  ✓ loader passed to super constructor should be empty function (3ms)
+
+PASS __tests__/nyc/MapLocator.test.js
+  ✓ everything (1ms)
+
+PASS __tests__/nyc/ol/format/CsvAddr.test.js
+  ✓ constructor (3ms)
+
+PASS __tests__/nyc/Geocoder.test.js
+  ✓ everything (2ms)
+
+PASS __tests__/nyc/ol/index.test.js
+  ✓ tileGrid (3ms)
+
+PASS __tests__/nyc/soda/index.test.js
+  ✓ soda (1ms)
+
+PASS __tests__/nyc/lang/Translate.test.js (10.925s)
+  ✓ constructor is button (77ms)
+  ✓ constructor not button (19ms)
+  ✓ constructor (is button, defaultLanguage in messages) (13ms)
+  ✓ constructor (is button, defaultLanguage not messages) (66ms)
+  ✓ constructor (is button, defaultLanguage in messages) (12ms)
+  ✓ translate (69ms)
+  ✓ showHint is button (9ms)
+  ✓ showHint not button (10024ms)
+  ✓ focus/blur (20ms)
+  defaultLanguage from system
+    ✓ constructor (is button, system defaultLanguage available) (10ms)
+    ✓ constructor (is button, system defaultLanguage available) (16ms)
+  selectDefault
+    ✓ selectDefault matches cookie (12ms)
+    ✓ selectDefault cookie is defaultLanguage (13ms)
+    ✓ selectDefault does not match cookie (63ms)
+
+PASS __tests__/nyc/lang/index.test.js
+  ✓ lang (1ms)
+
+PASS __tests__/nyc/mta/index.test.js
+  ✓ mta (1ms)
+
+-----------------------|----------|----------|----------|----------|-------------------|
+File                   |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-----------------------|----------|----------|----------|----------|-------------------|
+All files              |    93.85 |    92.16 |    92.58 |    93.83 |                   |
+ nyc                   |    94.02 |    92.29 |     93.6 |       94 |                   |
+  AutoComplete.js      |      100 |      100 |      100 |      100 |                   |
+  BasemapHelper.js     |      100 |      100 |      100 |      100 |                   |
+  CensusGeocoder.js    |        0 |        0 |        0 |        0 |... 59,160,161,171 |
+  Choice.js            |      100 |      100 |      100 |      100 |                   |
+  Collapsible.js       |      100 |      100 |      100 |      100 |                   |
+  Container.js         |      100 |      100 |      100 |      100 |                   |
+  Content.js           |      100 |      100 |      100 |      100 |                   |
+  Dialog.js            |    98.36 |     97.4 |      100 |    98.36 |           219,264 |
+  Directions.js        |    98.57 |    94.44 |    90.48 |    98.56 |           170,224 |
+  EventHandling.js     |      100 |      100 |      100 |      100 |                   |
+  Geoclient.js         |    88.73 |    97.78 |    69.23 |    88.57 |... 63,198,199,200 |
+  Geocoder.js          |      100 |      100 |      100 |      100 |                   |
+  Geolocate.js         |      100 |      100 |      100 |      100 |                   |
+  ItemPager.js         |      100 |      100 |      100 |      100 |                   |
+  ListPager.js         |      100 |      100 |      100 |      100 |                   |
+  LocalStorage.js      |      100 |    92.11 |      100 |      100 |          45,57,68 |
+  LocationMgr.js       |      100 |      100 |      100 |      100 |                   |
+  Locator.js           |      100 |      100 |      100 |      100 |                   |
+  MapLocator.js        |      100 |      100 |      100 |      100 |                   |
+  ReplaceTokens.js     |      100 |      100 |      100 |      100 |                   |
+  Search.js            |     95.8 |    91.38 |      100 |    95.76 |... 19,320,321,322 |
+  Share.js             |      100 |      100 |      100 |      100 |                   |
+  Slider.js            |      100 |      100 |      100 |      100 |                   |
+  Tabs.js              |      100 |      100 |      100 |      100 |                   |
+  Zoom.js              |      100 |      100 |      100 |      100 |                   |
+  index.js             |      100 |      100 |      100 |      100 |                   |
+ nyc/lang              |    99.28 |    97.87 |    96.43 |    99.27 |                   |
+  Goog.js              |    98.25 |    94.44 |    91.67 |    98.21 |                81 |
+  Translate.js         |      100 |      100 |      100 |      100 |                   |
+  index.js             |      100 |      100 |      100 |      100 |                   |
+ nyc/mta               |    96.15 |    83.33 |      100 |    96.15 |                   |
+  TripPlanHack.js      |       96 |    83.33 |      100 |       96 |                50 |
+  index.js             |      100 |      100 |      100 |      100 |                   |
+ nyc/ol                |    96.41 |    93.64 |    95.09 |    96.41 |                   |
+  Basemap.js           |      100 |      100 |      100 |      100 |                   |
+  FeaturePopup.js      |      100 |      100 |      100 |      100 |                   |
+  FeatureTip.js        |      100 |      100 |      100 |      100 |                   |
+  Filters.js           |      100 |      100 |      100 |      100 |                   |
+  FinderApp.js         |    88.64 |    83.58 |       80 |    88.55 |... 31,332,334,351 |
+  FrameworkMap.js      |    96.55 |    95.83 |      100 |    96.55 |                47 |
+  Geolocate.js         |      100 |      100 |      100 |      100 |                   |
+  LocalStorage.js      |      100 |      100 |      100 |      100 |                   |
+  LocationMgr.js       |      100 |      100 |      100 |      100 |                   |
+  Locator.js           |      100 |      100 |      100 |      100 |                   |
+  MapLocator.js        |    97.56 |     87.5 |      100 |    97.56 |               127 |
+  MapMgr.js            |    96.55 |    96.67 |    94.23 |    96.55 |... 17,754,755,765 |
+  MultiFeaturePopup.js |      100 |      100 |      100 |      100 |                   |
+  Popup.js             |      100 |      100 |      100 |      100 |                   |
+  Search.js            |      100 |       75 |      100 |      100 |                54 |
+  Zoom.js              |      100 |      100 |      100 |      100 |                   |
+  index.js             |      100 |      100 |      100 |      100 |                   |
+ nyc/ol/format         |    82.84 |       80 |    81.08 |    82.84 |                   |
+  CartoSql.js          |     96.3 |      100 |      100 |     96.3 |                60 |
+  CsvAddr.js           |    30.77 |        0 |    14.29 |    30.77 |... 13,115,116,117 |
+  CsvPoint.js          |      100 |      100 |      100 |      100 |                   |
+  Decorate.js          |      100 |      100 |      100 |      100 |                   |
+  SocrataJson.js       |    95.65 |      100 |    85.71 |    95.65 |                84 |
+  StandardCsv.js       |      100 |      100 |      100 |      100 |                   |
+ nyc/ol/source         |    92.08 |    86.96 |    91.67 |    92.08 |                   |
+  AutoLoad.js          |    77.27 |       50 |     87.5 |    77.27 |    56,57,58,68,71 |
+  FilterAndSort.js     |    94.83 |       90 |    92.31 |    94.83 |        89,112,123 |
+  SocrataJson.js       |      100 |      100 |      100 |      100 |                   |
+ nyc/soda              |    86.75 |    96.15 |    79.31 |    86.75 |                   |
+  Discover.js          |        0 |        0 |        0 |        0 |... 39,40,41,43,46 |
+  Query.js             |      100 |      100 |      100 |      100 |                   |
+  index.js             |      100 |      100 |      100 |      100 |                   |
+-----------------------|----------|----------|----------|----------|-------------------|
+Test Suites: 58 passed, 58 total
+Tests:       502 passed, 502 total
+Snapshots:   0 total
+Time:        33.741s
+Ran all test suites.
+
+Showing logs for build [32mos49808n-nyc-lib-master-z825h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image node:9-slim           
+2020/03/03 13:32:22 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:0e0175bbe4f8d9d104590d8d2c591017874e30977cb71aaff1cf6fa99479575c: no such file or directory 
+[36mINFO[0m[0000] Downloading base image node:9-slim           
+2020/03/03 13:32:22 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0001] Executing 0 build triggers                   
+[36mINFO[0m[0001] cmd: EXPOSE                                  
+[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0001] Using files from context: [/workspace/source] 
+[36mINFO[0m[0001] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0001] Taking snapshot of full filesystem...        
+[36mINFO[0m[0001] ENV PORT 8080                                
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] EXPOSE 8080                                  
+[36mINFO[0m[0001] cmd: EXPOSE                                  
+[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] WORKDIR /usr/src/app                         
+[36mINFO[0m[0001] cmd: workdir                                 
+[36mINFO[0m[0001] Changed working directory to /usr/src/app    
+[36mINFO[0m[0001] Creating directory /usr/src/app              
+[36mINFO[0m[0001] Taking snapshot of files...                  
+[36mINFO[0m[0001] Using files from context: [/workspace/source] 
+[36mINFO[0m[0002] COPY . .                                     
+[36mINFO[0m[0009] Taking snapshot of files...                  
+[36mINFO[0m[0014] CMD ["npm", "start"]                         
+[36mINFO[0m[0014] No files changed in this command, skipping snapshotting. 
+error pushing image: failed to push to destination 812969027137.dkr.ecr.us-east-1.amazonaws.com/os49808n/nyc-lib:1.3.75: unsupported status code 403; body: 
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
