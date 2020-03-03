@@ -1,1 +1,36 @@
+env:
+- name: STG_GEOCLIENT_HOST
+  value: csgis-stg-prx.csc.nycnet
+- name: STG_LEAF_TILE_HOST
+  value: csgis{s}-stg-prx.csc.nycnet
+- name: STG_OL_TILE_HOST
+  value: csgis{1-4}-stg-prx.csc.nycnet
+- name: STG_DEPLOY_HOST
+  value: msslva-gisapp01.csc.nycnet
+- name: PRD_DEPLOY_HOST
+  value: msplva-gisapp01.t3mgmt.nycnet
+- name: DEPLOY_USER
+  value: gis
+- name: DEPLOY_DIR
+  value: /gis/data/apps/mobile
+- name: NODE_ENV
+  value: stg
 buildPack: javascript
+pipelineConfig:
+  env:
+  - name: STG_GEOCLIENT_HOST
+    value: csgis-stg-prx.csc.nycnet
+  - name: STG_LEAF_TILE_HOST
+    value: csgis{s}-stg-prx.csc.nycnet
+  - name: STG_OL_TILE_HOST
+    value: csgis{1-4}-stg-prx.csc.nycnet
+  - name: STG_DEPLOY_HOST
+    value: msslva-gisapp01.csc.nycnet
+  - name: PRD_DEPLOY_HOST
+    value: msplva-gisapp01.t3mgmt.nycnet
+  - name: DEPLOY_USER
+    value: gis
+  - name: DEPLOY_DIR
+    value: /gis/data/apps/mobile
+  - name: NODE_ENV
+    value: stg
