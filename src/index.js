@@ -3,7 +3,7 @@ var http = require('http');
 var fileSystem = require('fs');
 
 var server = http.createServer(function(req, resp){
-	var fileName = 'index.html';
+	var fileName = 'src/index.html';
 	var contentType = 'text/html';
 	var path = req.url;
 	if (path) {
